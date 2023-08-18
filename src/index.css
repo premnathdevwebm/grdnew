@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
+
 *,body {
   margin: 0;
   padding: 0;
@@ -109,4 +110,21 @@
   --br-81xl: 100px;
   --br-5xs: 8px;
   --br-8xs: 5px;
+
+  --up: 2;
+  --card-margin: 12px;
+  --card-shadow: rgba(46, 49, 52, 0.4);
+  --color-white: #fff;
+  --color-lightgrey: #ccc;
+  --color-ui: #999;
+  --color-ui-hover: #666;
+  --cardWidth: calc(86vw / var(--up));
+  --carouselWidth: calc(var(--cardWidth) * var(--num));
+  --carouselLeftMargin: calc(29vw - var(--cardWidth));
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --up: 1;
+  }
 }

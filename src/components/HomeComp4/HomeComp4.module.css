@@ -25,35 +25,38 @@
 .symbolTest {
   position: absolute;
   top: 80px;
-  left: 370px;
+  left: 240px;
 }
 .doublquoteMain {
   position: absolute;
-  top: 80px;
+  top: 90px;
   z-index: 10;
   color: #fff;
   text-align: center;
   font-family: Century Gothic;
-  font-size: 200px;
+  font-size: 180px;
   font-style: normal;
   font-weight: 700;
   line-height: 200px;
 }
 .title{
   position: absolute;
-  top: 460px;
+  top: 380px;
+  left: 160px;
   transform: rotate(-90deg);
   color: rgba(255, 255, 255, 0.50);
   text-align: center;
   font-family: Bungee;
-  font-size: 50px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 6px;
 }
 
-.carouselSlide{
+.carcarousel{
   position: absolute;
-  top: 460px;
+  overflow: hidden;
+  left: 450px;
+  top: 160px;
 }
