@@ -25,7 +25,7 @@ const Header = () => {
         <h3>BUZZY-BEE</h3>
         <ul>
           <li>
-            <Link to="/verticals/1">BUZZY-BEE Advertising</Link>
+            <Link to="/verticals/buzzebee">From Idea To Icon</Link>
           </li>
         </ul>
       </div>
@@ -33,7 +33,7 @@ const Header = () => {
         <h3>IT SERVICES & SOLUTIONS</h3>
         <ul>
           <li>
-            <Link to="/verticals/1">IT World</Link>
+            <Link to="/verticals/itservice">Your Vision Our Technology</Link>
           </li>
         </ul>
       </div>
@@ -41,7 +41,7 @@ const Header = () => {
         <h3>CYBER SECURITY</h3>
         <ul>
           <li>
-            <Link to="/verticals/1">Vulnerability Center</Link>
+            <Link to="/verticals/cyber">Secure Today</Link>
           </li>
         </ul>
       </div>
