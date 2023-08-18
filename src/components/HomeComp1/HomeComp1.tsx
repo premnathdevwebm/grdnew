@@ -9,7 +9,8 @@ const HomeComp1 = () => {
           <p className={styles.para2}>GOLDEN ROYCE DESIGN</p>
         </div>
         <div className={styles.content2}>
-          <p className={styles.para3}>Powerhouse of Creativity and Expertise</p>
+          <p className={styles.para3}>Powerhouse of</p>
+          <p className={styles.para3}>Creativity and Expertise</p>
         </div>
         <div className={styles.content3}>
           <InfiniteScrollList />

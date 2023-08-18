@@ -12,21 +12,27 @@ const HomeComp3 = () => {
             <img className={styles.contimage} src={img1} alt="" />
             <div>
               <p className={styles.capcontent}>BUZZY -BEE</p>
-              <p className={styles.know}>know more</p>
+              <div className={styles["knowcontainer"]}>
+                <p className={styles.know}>know more</p>
+              </div>
             </div>
           </div>
           <div className={styles.vertContent2}>
             <img className={styles.contimage} src={img2} alt="" />
             <div>
               <p className={styles.capcontent}>IT SERVICES & SOLUTIONS</p>
-              <p className={styles.know}>know more</p>
+              <div className={styles["knowcontainer"]}>
+                <p className={styles.know}>know more</p>
+              </div>
             </div>
           </div>
           <div className={styles.vertContent3}>
             <img className={styles.contimage} src={img3} alt="" />
             <div>
               <p className={styles.capcontent}>CYBER SECURITY</p>
-              <p className={styles.know}>know more</p>
+              <div className={styles["knowcontainer"]}>
+                <p className={styles.know}>know more</p>
+              </div>
             </div>
           </div>
         </div>

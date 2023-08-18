@@ -1,12 +1,9 @@
 import { useState } from "react";
 import styles from "components/Footer/Footer.module.css";
 import logo from "components/Footer/assets/golden-royce-design-logo-1@2x.png";
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import logo1 from "components/Footer/assets/Facebook_logo_PNG12 3.png";
+import logo2 from "components/Footer/assets/whatsapp 1.png";
+import logo3 from "components/Footer/assets/Instagram_logo_PNG12 3.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("ENTER EMAIL ADDRESS");
@@ -31,13 +28,40 @@ const Footer = () => {
             <p className={styles.thin}>BUISNESS MADE SMART</p>
           </div>
           <div className={styles.fotterlogo}>
-            <FaFacebook className={styles.logosocial} />
-            <FaLinkedin className={styles.logosocial} />
-            <FaInstagram className={styles.logosocial} />
-            <FaWhatsapp className={styles.logosocial} />
+            <img src={logo1} alt="" className={styles.logosocial} />
+            <img src={logo2} alt="" className={styles.logosocial} />
+            <img src={logo3} alt="" className={styles.logosocial} />
           </div>
         </div>
-        <div className={styles.whatWeDo2}></div>
+        <div className={styles.whatWeDo2}>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <h3>What We Do</h3>
+              <p>Cyber Security</p>
+              <p>Buzz - Y - Bee</p>
+              <p>IT Services and Solutions</p>
+            </div>
+            <div className={styles.column}>
+              <h3>Company</h3>
+              <p>About Us</p>
+              <p>Verticals</p>
+              <p>Projects</p>
+              <p>Blogs</p>
+              <p>Gallery</p>
+            </div>
+            <div className={styles.column}>
+              <h3>Support</h3>
+              <p>FAQ</p>
+              <p>Policy</p>
+              <p>Business</p>
+            </div>
+            <div className={styles.column}>
+              <h3>Contact</h3>
+              <p>WhatsApp</p>
+              <p>Support 24</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
 }
 .column-1 {
   display: flex;
-  width: 20vw;
+  width: 25vw;
 }
 
 .column-2 {
@@ -34,19 +34,19 @@
 .goldenRoyceDesign {
   color: #f0c545;
   font-family: var(--font-century-gothic);
-  font-size: 21px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%;
+  line-height: 120%;
 }
 
 .buisnessMadeSmart {
   color: var(--color-red);
   font-family: var(--font-century-gothic);
-  font-size: 17px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 120%;
 }
 
 .row2 {
@@ -97,7 +97,7 @@
 .subNav {
   padding: 20px 25px 20px 10px;
   position: absolute;
-  left: -620%;
+  left: -480%;
   background-color: #fff;
   display: flex;
   gap: 10px;

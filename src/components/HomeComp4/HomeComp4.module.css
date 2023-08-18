@@ -6,17 +6,54 @@
   background-size: cover;
   background-position: center;
 }
-.mainContain{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.mainContain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.testimonialContain{
-    height: 80%;
-    width: 100vw;
-    margin-left: 20% ;
-    background: rgba(255, 248, 231, 0.39);
-    overflow: hidden;
+.testimonialContain {
+  height: 70%;
+  width: 100vw;
+  margin-left: 20%;
+  background: rgba(255, 248, 231, 0.39);
+  overflow: hidden;
+}
+
+.symbolTest {
+  position: absolute;
+  top: 80px;
+  left: 370px;
+}
+.doublquoteMain {
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200px;
+}
+.title{
+  position: absolute;
+  top: 460px;
+  transform: rotate(-90deg);
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  font-family: Bungee;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+
+.carouselSlide{
+  position: absolute;
+  top: 460px;
 }

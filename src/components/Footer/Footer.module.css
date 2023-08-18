@@ -81,4 +81,29 @@
 
 .whatWeDo2 {
   width: 70%;
+  background: #ad000e;
+}
+.whatWeDo2 .row {
+  position: relative;
+  width: 80%;
+  top: 60px;
+  left: 40px;
+  height: 60%;
+  display: flex;
+  color: #fff8e7;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 30px;
+  border-bottom: 1px solid #bda96c;
+}
+
+.column h3{
+  margin-bottom: 20px;
+}
+
+.column p{
+  font-size: 15px;
 }

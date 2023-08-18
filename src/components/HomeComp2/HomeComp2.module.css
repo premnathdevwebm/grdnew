@@ -8,14 +8,8 @@
 .column3 {
   flex: 1;
   max-width: 33vw;
-  height: 100vh;
+  height: 130vh;
   position: relative;
-}
-
-.column1,
-.column3 {
-  border-radius: 0px 0px 0px 16px;
-  background: #ad000e;
 }
 
 .column1 img,
@@ -40,7 +34,7 @@
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(173, 0, 14, 0.1) 50%,
+    rgba(173, 0, 14, 0.5) 50%,
     rgba(173, 0, 14, 0.1) 100%
   );
   z-index: 1;
@@ -48,8 +42,9 @@
 
 .boxcontent1 {
   position: absolute;
-  top: 10%;
-  left: 80%;
+  top: 8px;
+  left: 50%;
+  z-index: 30;
   width: 600px;
   height: 285px;
   border-radius: 8px 0px 8px 8px;
@@ -58,8 +53,9 @@
 }
 .boxcontent2 {
   position: absolute;
-  bottom: 10%;
-  right: 80%;
+  bottom: 8px;
+  right: 50%;
+  z-index: 30;
   width: 600px;
   height: 285px;
   border-radius: 8px 0px 8px 8px;
@@ -69,15 +65,15 @@
 
 .decor1,
 .decor2 {
-  width: 140px;
+  width: 100px;
   height: 160px;
 }
 
 .decor1 {
   transform: rotate(90.305deg);
   position: relative;
-  top: 0;
-  left: 75%;
+  top: -28px;
+  left: 70%;
   border-radius: 0px 0px 100px 0px;
   background: rgba(173, 0, 14, 0.9);
 }
