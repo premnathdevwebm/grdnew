@@ -1,0 +1,72 @@
+.rectangleParent4 {
+  position: fixed;
+  top: 65vh;
+  right: 1.56rem;
+  width: 11.46rem;
+  height: 6.31rem;
+  font-size: var(--font-size-base);
+  color: #c0ab6d;
+  z-index: 200;
+}
+.ellipseDiv,
+.groupChild14 {
+  position: absolute;
+  top: 1.63rem;
+  left: 1.15rem;
+  background-color: var(--color-white);
+  width: 10.31rem;
+  height: 2.81rem;
+}
+.ellipseDiv {
+  top: 0.75rem;
+  left: -0.13rem;
+  border-radius: 50%;
+  background-color: var(--color-darkkhaki-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 5px solid var(--color-white);
+  box-sizing: border-box;
+  width: 4.54rem;
+  height: 4.54rem;
+}
+.lion3x1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.27rem;
+  height: 6.31rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.connect {
+  font-family: var( --font-century-gothic);
+  position: absolute;
+  top: 2.4rem;
+  left: 4.83rem;
+  display: inline-block;
+  width: 5.69rem;
+  height: 1.33rem;
+  cursor: pointer;
+}
+
+.socialLinks {
+  position: absolute;
+  top: 6.31rem; 
+  left: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0; 
+  transition: top 0.3s, opacity 0.3s; 
+  pointer-events: none; 
+}
+
+.rectangleParent4 .socialLinks.show {
+  top: -17rem; 
+  opacity: 1; 
+  pointer-events: auto; 
+  z-index: 200;
+}
+.connect:hover,
+.groupChild14:hover{
+  color: var(--color-red);
+}

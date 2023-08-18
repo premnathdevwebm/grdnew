@@ -1,0 +1,22 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/Rectangle 67.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainContain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonialContain{
+    height: 80%;
+    width: 100vw;
+    margin-left: 20% ;
+    background: rgba(255, 248, 231, 0.39);
+    overflow: hidden;
+}

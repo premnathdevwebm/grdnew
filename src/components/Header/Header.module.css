@@ -1,0 +1,141 @@
+.container {
+  width: 80%;
+  margin: 10px auto;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.column-1 {
+  display: flex;
+  width: 20vw;
+}
+
+.column-2 {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.gold {
+  position: relative;
+  top: 25%;
+  left: 3%;
+}
+
+.goldenRoyceDesign {
+  color: #f0c545;
+  font-family: var(--font-century-gothic);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.buisnessMadeSmart {
+  color: var(--color-red);
+  font-family: var(--font-century-gothic);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 116px;
+  height: auto;
+  object-fit: cover;
+}
+
+.horizontal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.horizontal-nav1 {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.horizontal-nav1 ul {
+  display: flex;
+}
+
+.horizontal-nav1 li {
+  margin-right: 10px;
+}
+
+.horizontal-nav1 li a {
+  text-decoration: none;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dropNav {
+  position: relative;
+}
+
+.subNav {
+  padding: 20px 25px 20px 10px;
+  position: absolute;
+  left: -620%;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.colnav {
+  display: flex;
+  flex-direction: column;
+}
+
+.colnav h3 {
+  font-weight: 400;
+  font-family: var(--font-poppins);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.colnav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: circle;
+}
+
+.colnav ul li {
+  min-width: 310px;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.colnav ul li a {
+  font-size: 16px;
+  color: #bda96c;
+}
+
+.colnav ul li a:hover {
+  color: var(--color-red);
+}

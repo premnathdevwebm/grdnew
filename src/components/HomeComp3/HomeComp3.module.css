@@ -1,0 +1,73 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/Rectangle 66.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.context {
+  width: 80%;
+  height: 80%;
+  border-radius: 35px;
+  background: rgba(173, 0, 14, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.vertical {
+  display: inline-flex;
+  position: relative;
+  top: 300px;
+  left: -120px;
+  transform: rotate(-90deg);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 135px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.vertContent {
+  position: relative;
+  left: 320px;
+  display: flex;
+  gap: 30px;
+}
+.vertContent1,
+.vertContent2,
+.vertContent3 {
+  width: 22%;
+  height: 80%;
+  background: rgba(173, 0, 14, 0.8);
+}
+
+.contimage {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.capcontent {
+  color: #fff;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.know{
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 2px;
+  border: 1px solid #FFF8E7;
+  color: #FFF8E7;
+  font-family: Century Gothic;
+  font-size: 20px;
+}

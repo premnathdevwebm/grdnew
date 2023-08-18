@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-century-gothic: "Century Gothic";
+  --font-abel: Abel;
+  --font-poppins: Poppins;
+  --font-inherit: inherit;
+  --font-dm-serif-display: "DM Serif Display";
+  --s-regular: Inter;
+
+  /* font sizes */
+  --font-size-xl: 1.25rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-sm: 0.88rem;
+  --font-size-xs: 0.75rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-67xl: 5.38rem;
+  --font-size-lg: 1.13rem;
+  --font-size-mid: 1.06rem;
+  --font-size-2xl: 1.31rem;
+  --m-bold-size: 1.5rem;
+  --font-size-23xl: 2.63rem;
+  --font-size-4xl: 1.44rem;
+  --l-bold-size: 2.25rem;
+  --font-size-29xl: 3rem;
+  --font-size-11xl: 1.88rem;
+  --xl-bold-size: 4rem;
+  --s-regular-size: 1rem;
+  --font-size-28xl: 2.94rem;
+  --font-size-7xl: 1.63rem;
+
+  /* Colors */
+  --color-whitesmoke-100: #efefef;
+  --color-darkkhaki-100: #bda96c;
+  --color-darkkhaki-200: rgba(189, 169, 108, 0);
+  --color-black: #000;
+  --color-white: #fff;
+  --color-mediumpurple: #9990ff;
+  --color-darkgray: #b3b3b3;
+  --color-gray-100: #151236;
+  --color-gray-200: rgba(21, 18, 54, 0.5);
+  --color-dimgray: #565656;
+  --color-gray-100: #757575;
+  --neutral-100: #262626;
+  --color-gray-300: #2c1b03;
+  --color-gray-200: #151236;
+  --neutral-10: #fff;
+  --color-darkkhaki-200: #bfab6d;
+  --color-darkkhaki-100: #bda96c;
+  --color-darkkhaki-300: rgba(189, 169, 108, 0.5);
+  --color-darkkhaki-400: rgba(189, 169, 108, 0);
+  --neutral-80: #5d5f61;
+  --color-dimgray-100: #565656;
+  --color-black: #000;
+  --color-firebrick-100: #9c1817;
+  --color-crimson: #dc3232;
+  --color-red: #AD000E;
+  --color-antiquewhite: rgba(217, 211, 192, 0.3);
+  --primary-main: #0195f7;
+  --color-lightgray: #d0d5dd;
+
+  /* Gaps */
+  --gap-mid: 1.06rem;
+  --gap-29xl: 3rem;
+  --gap-7xs: 0.38rem;
+  --gap-9xs: 0.25rem;
+  --gap-5xl: 1.5rem;
+  --gap-45xl: 4rem;
+  --gap-13xl: 2rem;
+  --gap-5xs: 0.5rem;
+  --gap-base: 1rem;
+  --gap-xs: 0.75rem;
+  --gap-37xl: 3.5rem;
+
+  /* Paddings */
+  --padding-8xl: 1.69rem;
+  --padding-xs: 0.75rem;
+  --padding-9xl: 1.75rem;
+  --padding-xl: 1.25rem;
+  --padding-21xl: 2.5rem;
+  --padding-10xl: 1.81rem;
+  --padding-77xl: 6rem;
+  --padding-13xl: 2rem;
+  --padding-5xs: 0.5rem;
+  --padding-base: 1rem;
+  --padding-61xl: 5rem;
+
+  /* border radiuses */
+  --br-4xs: 9px;
+  --br-base: 16px;
+  --br-17xl: 36px;
+  --br-mid: 17px;
+  --br-21xl: 40px;
+  --br-xl: 20px;
+  --br-41xl: 60px;
+  --br-20xl: 39px;
+  --br-81xl: 100px;
+  --br-5xs: 8px;
+  --br-8xs: 5px;
 }

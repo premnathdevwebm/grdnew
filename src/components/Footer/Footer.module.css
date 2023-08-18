@@ -1,0 +1,84 @@
+.container {
+  max-width: 100vw;
+}
+.subscribeUsParent {
+  display: flex;
+  height: 40vh;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 40%;
+  max-width: 100vw;
+  background: url(./assets/rectangle-421@2x.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.subscribeUs {
+  color: #bda96c;
+  font-family: var(--font-abel);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 11.62px;
+}
+.enterEmailAddress {
+  border: 3px solid #bda96c;
+  padding: 10px;
+  color: #bda96c;
+  background-color: transparent;
+}
+.contactNow {
+  color: #2c1b03;
+  background: #bda96c;
+  padding: 5px;
+  font-family: var(--font-abel);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.whatWeDoParent {
+  display: flex;
+  width: 100vw;
+  min-height: 400px;
+}
+
+.whatWeDo1 {
+  background: #fff8e7;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatWeDo1 .flex {
+  width: 128px;
+  height: 127.994px;
+}
+.whatWeDo1 .content {
+  color: #ad000e;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+.whatWeDo1 .fotterlogo {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.logosocial {
+  width: 16px;
+  height: 16px;
+}
+
+.whatWeDo2 {
+  width: 70%;
+}
