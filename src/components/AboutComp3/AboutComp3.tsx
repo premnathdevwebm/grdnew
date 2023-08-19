@@ -7,7 +7,7 @@ const AboutComp3 = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.cont1}>
-          <h3>Why Us ?</h3>
+          <h3 id="why">Why Us ?</h3>
         </div>
       </div>
       <div className={styles.context}>
