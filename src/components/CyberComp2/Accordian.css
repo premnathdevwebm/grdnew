@@ -19,3 +19,33 @@
   .open .accordianText {
     display: block;
   }
+
+  .singleAccordian {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    cursor: pointer;
+    color: #ccc;
+    position: relative; /* Add this */
+  }
+  
+  .accordianTitle {
+    font-weight: bold;
+    display: flex; /* Add this */
+    justify-content: space-between; /* Add this */
+    align-items: center; /* Add this */
+  }
+  
+  .toggleSign {
+    font-weight: bold; /* Add this to make the plus or minus bold */
+  }
+  
+  .accordianText {
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .open .accordianText {
+    display: block;
+  }

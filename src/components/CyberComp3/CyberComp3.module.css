@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 40vw;
+  height: 60vw;
   background-image: url("./assets/cyberthirdimg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -8,6 +8,8 @@
 }
 .container .content {
   width: 50%;
+  position: relative;
+  left: 60px;
 }
 .cyber {
   color: #d4af37;
@@ -26,10 +28,21 @@
   font-weight: 700;
   line-height: normal;
 }
-.content1{
-    position: relative;
+.content1 {
+  position: relative;
+  left: 160px;
 }
-.content11{
-    border-radius: 22px;
-background: #FFF;
+.content11 {
+  padding: 30px;
+  width: 40%;
+  border-radius: 22px;
+  background: #fff;
+}
+.content12{
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.content12 ul{
+  color: #fff;
 }

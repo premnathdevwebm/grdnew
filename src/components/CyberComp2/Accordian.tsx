@@ -49,22 +49,24 @@ const datas = [
 ];
 
 function SingleAccordian({ title, info }: {title: string, info: string}) {
-    const [show, setShow] = useState(false);
-  
-    return (
-      <div className={`singleAccordian ${show ? "open" : ""}`}>
-        <div
-          className="accordianTitle"
-          onClick={() => {
-            setShow(!show);
-          }}
-        >
-          <span>{title}</span>
-        </div>
-        {show && <div className="accordianText">{info}</div>}
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className={`singleAccordian ${show ? "open" : ""}`}>
+      <div
+        className="accordianTitle"
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        <span>{title}</span>
+        <span className="toggleSign">{show ? "-" : "+"}</span> {/* Add this */}
       </div>
-    );
-  }
+      {show && <div className="accordianText">{info}</div>}
+    </div>
+  );
+}
+
 
 const Accordian = () => {
   return <div className="accordian">
