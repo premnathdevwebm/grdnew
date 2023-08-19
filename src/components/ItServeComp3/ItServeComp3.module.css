@@ -2,3 +2,39 @@
     width: 100vw;
     height: 100vh;
 }
+
+.flxCont{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width: 80%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .item {
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  

@@ -16,12 +16,75 @@
   font-weight: 700;
   line-height: normal;
 }
-.content p{
-    color: #000;
-text-align: center;
-font-family: Century Gothic;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 33px;
+.content p {
+  color: #000;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.flexcont {
+  position: relative;
+  top: 80px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  border: 1px solid black;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.btnCont {
+  position: relative;
+  top: 150px;
+  left: 500px;
+}
+
+.btnCont button {
+  display: inline-flex;
+  height: 64px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #151236;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+}
+
+.btnCont button:hover {
+  background-color: #151236;
+  color: #fff;
 }
