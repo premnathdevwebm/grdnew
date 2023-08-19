@@ -1,8 +1,98 @@
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./assets/buzzbee.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.container {
+  width: 100vw;
+  height: 60vh;
+  background-image: url("./assets/buzzbee.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  mix-blend-mode: screen;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/image1.gif");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+.top1 {
+  position: absolute;
+  left: -10px;
+  transform: rotate(-180.332deg);
+  overflow: hidden;
+}
+
+.bottom1 {
+  position: absolute;
+  top: 300px;
+  left: -50px;
+  transform: rotate(43.252deg);
+  overflow: hidden;
+}
+.container h3 {
+  position: absolute;
+  left: 190px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Century Gothic;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container span {
+  color: #f20014;
+  font-family: Century Gothic;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: url("./assets/pngwing 5.png");
+}
+.container p {
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  width: 55%;
+  color: #000;
+  font-family: Century Gothic;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container button {
+  position: absolute;
+  top: 300px;
+  left: 60px;
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: inline-flex;
+  height: 60px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #151236;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+}
+.container button:hover{
+    color: #fff;
+    background-color: #151236;
 }

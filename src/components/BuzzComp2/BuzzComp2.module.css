@@ -1,4 +1,182 @@
-.container{
-    width: 100vw;
-    height: 100vh;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #FFF8E7;
+}
+.content{
+    position: relative;
+    background-color: #FFF8E7;
+}
+.grid-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0; 
+}
+
+.grid-item {
+  background: url('./assets/Rectangle 107.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item img {
+  width: 50%; 
+}
+
+.grid-item p {
+  color: #151236; 
+}
+
+.grid-item1 {
+  background: url('./assets/Rectangle 116.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item1 img {
+  width: 50%; 
+}
+
+.grid-item1 p {
+  color: #fff; 
+}
+
+.grid-item2 {
+  background: url('./assets/Rectangle 107.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item2 img {
+  width: 50%; 
+}
+
+.grid-item2 p {
+  color: #151236; 
+}
+
+.grid-item3 {
+  background: url('./assets/Rectangle 116.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item3 img {
+  width: 50%; 
+}
+
+.grid-item3 p {
+  color: #fff; 
+}
+
+.grid-item4 {
+  background: url('./assets/Rectangle 111.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item4 img {
+  width: 50%; 
+}
+
+.grid-item4 p {
+  color: #fff; 
+}
+.grid-item4 i{
+  color: #fff; 
+}
+  
+.grid-item5 {
+  background: url('./assets/Rectangle 116.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item5 img {
+  width: 50%; 
+}
+
+.grid-item5 p {
+  color: #fff; 
+}
+  
+.grid-item6 {
+  background: url('./assets/Rectangle 107.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item6 img {
+  width: 50%; 
+}
+
+.grid-item6 p {
+  color: #151236; 
+}
+
+.grid-item7 {
+  background: url('./assets/Rectangle 116.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item7 img {
+  width: 50%; 
+}
+
+.grid-item7 p {
+  color: #fff; 
+}
+
+.grid-item8 {
+  background: url('./assets/Rectangle 107.png') no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item8 img {
+  width: 50%; 
+}
+
+.grid-item8 p {
+  color: #151236; 
 }

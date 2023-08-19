@@ -1,3 +1,35 @@
-.container{
-    width: 100vw;
+.container {
+  width: 100vw;
+  height: 40vw;
+  background-image: url("./assets/cyberthirdimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container .content {
+  width: 50%;
+}
+.cyber {
+  color: #d4af37;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.service {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content1{
+    position: relative;
+}
+.content11{
+    border-radius: 22px;
+background: #FFF;
 }

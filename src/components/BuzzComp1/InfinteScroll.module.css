@@ -1,0 +1,7 @@
+.scroller {
+  height: 95px;
+  background: linear-gradient(180deg, #D2A109 0%, #CB7E04 0.01%, rgba(227, 150, 9, 0.06) 100%);
+
+  display: flex;
+  align-items: center;
+}
