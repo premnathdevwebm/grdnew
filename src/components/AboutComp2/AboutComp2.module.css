@@ -1,0 +1,63 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(
+      96.56% 96.56% at 50% 50%,
+      rgba(255, 0, 0, 0.68) 0%,
+      rgba(255, 0, 0, 0.3) 100%
+    ),
+    url("./assets/animate.gif");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain, cover;
+  mix-blend-mode: screen;
+  position: relative;
+  perspective: 1000px;
+}
+.content1 {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 40%;
+  height: 80%;
+  background: url("./assets/Rectangle 74.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content2 {
+  width: 55%;
+  padding: 20px;
+  position: absolute;
+  top: 120px;
+  left: 560px;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content2 h3 {
+  display: inline-flex;
+  padding: 12px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ad000e;
+  color: #ad000e;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.content2 p {
+  color: #000;
+  text-align: justify;
+  font-family: Century Gothic;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 10px;
+}

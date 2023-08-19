@@ -1,0 +1,91 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+  
+    background-image: 
+      radial-gradient(
+        96.56% 96.56% at 50% 50%,
+        rgba(255, 245, 216, 0.68) 0%,
+        rgba(255, 248, 231, 0.68) 100%
+      ),
+      url("./assets/logo_1.gif");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain, cover; 
+    mix-blend-mode: screen;
+  }
+.content {
+  position: relative;
+  top: 90px;
+  left: 90px;
+}
+.content h2 {
+  color: #d4af37;
+  font-family: Poppins;
+  font-size: 155px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-left: 12px solid #d4af37;
+  padding-left: 30px;
+}
+.content1 {
+  position: absolute;
+  left: 150px;
+}
+.content1 p {
+  color: #ad000e;
+  font-family: Century Gothic;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 80%;
+}
+.buttonsect {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.about {
+  display: inline-flex;
+  padding: 12px 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ad000e;
+  background: #fad6a5;
+  border-color: #d4af37;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about:hover {
+  background-color: #ad000e;
+  color: #d4af37;
+}
+.why {
+  display: inline-flex;
+  padding: 12px 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ad000e;
+  background-color: transparent;
+  color: #ad000e;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.why:hover{
+    border: none;
+    background-color: #ad000e;
+    color: #fad6a5;
+}
