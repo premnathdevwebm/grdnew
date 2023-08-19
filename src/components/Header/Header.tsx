@@ -22,7 +22,7 @@ const Header = () => {
       className={styles.subNav}
     >
       <div className={styles.colnav}>
-        <h3>BUZZY-BEE</h3>
+      <Link to="/verticals/buzzebee"><h3>BUZZ-BEE</h3></Link>
         <ul>
           <li>
             <Link to="/verticals/buzzebee">From Idea To Icon</Link>
@@ -30,7 +30,7 @@ const Header = () => {
         </ul>
       </div>
       <div className={styles.colnav}>
-        <h3>IT SERVICES & SOLUTIONS</h3>
+      <Link to="/verticals/itservice"><h3>IT SERVICES & SOLUTIONS</h3></Link>
         <ul>
           <li>
             <Link to="/verticals/itservice">Your Vision Our Technology</Link>
@@ -38,7 +38,7 @@ const Header = () => {
         </ul>
       </div>
       <div className={styles.colnav}>
-        <h3>CYBER SECURITY</h3>
+      <Link to="/verticals/cyber"> <h3>CYBER SECURITY</h3></Link>
         <ul>
           <li>
             <Link to="/verticals/cyber">Secure Today</Link>

@@ -38,16 +38,13 @@ const Footer = () => {
             <div className={styles.column}>
               <h3>What We Do</h3>
               <p>Cyber Security</p>
-              <p>Buzz - Y - Bee</p>
+              <p>Buzz - Bee</p>
               <p>IT Services and Solutions</p>
             </div>
             <div className={styles.column}>
               <h3>Company</h3>
               <p>About Us</p>
               <p>Verticals</p>
-              <p>Projects</p>
-              <p>Blogs</p>
-              <p>Gallery</p>
             </div>
             <div className={styles.column}>
               <h3>Support</h3>
@@ -58,7 +55,6 @@ const Footer = () => {
             <div className={styles.column}>
               <h3>Contact</h3>
               <p>WhatsApp</p>
-              <p>Support 24</p>
             </div>
           </div>
         </div>

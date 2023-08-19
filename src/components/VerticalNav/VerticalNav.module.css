@@ -1,8 +1,8 @@
 .rectangleParent4 {
   position: fixed;
   top: 65vh;
-  right: 1.56rem;
-  width: 11.46rem;
+  right: 1rem;
+  width: 12rem;
   height: 6.31rem;
   font-size: var(--font-size-base);
   color: #c0ab6d;
@@ -11,14 +11,14 @@
 .ellipseDiv,
 .groupChild14 {
   position: absolute;
-  top: 1.63rem;
-  left: 1.15rem;
+  top: 1.6rem;
+  left: 1.2rem;
   background-color: var(--color-white);
-  width: 10.31rem;
-  height: 2.81rem;
+  width: 10.1rem;
+  height: 2.7rem;
 }
 .ellipseDiv {
-  top: 0.75rem;
+  top: 0.85rem;
   left: -0.13rem;
   border-radius: 50%;
   background-color: var(--color-darkkhaki-100);
