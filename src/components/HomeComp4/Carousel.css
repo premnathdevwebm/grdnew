@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 :root {
-  --up: 3;
+  --up: 2;
   --card-margin: 12px;
   --card-shadow: rgba(46, 49, 52, 0.4);
   --color-white: #fff;
@@ -94,6 +94,7 @@
   border-radius: 4px;
   margin: var(--card-margin);
   background: var(--color-white);
+  overflow: hidden;
 }
 
 .card .material-icons {
