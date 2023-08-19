@@ -1,4 +1,35 @@
-.container{
-    width: 100vw;
-    height: 100vh;
+.container {
+  width: 100vw;
+
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.83) 0%,
+      rgba(0, 0, 0, 0.83) 100%
+    ),
+    url("./assets/cybercompimg2.png"), lightgray 50% / cover no-repeat;
+  mix-blend-mode: exclusion;
+}
+
+.content {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.content h3 {
+  color: #fff;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content h3 span {
+  color: #d4af37;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

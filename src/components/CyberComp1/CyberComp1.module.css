@@ -1,8 +1,52 @@
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./assets/cyberimg1.png');
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/cyberimg1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.content1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px;
+}
+.content1 p {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.content2 {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 30px 10px rgba(21, 18, 54, 0.27);
+  width: 60%;
+  margin-left: 30px;
+}
+.content2 p {
+  padding: 20px;
+  color: #05f1da;
+  text-align: justify;
+  font-family: Century Gothic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content2 button {
+  border-radius: 60px;
+  background: #d4af37;
+  display: flex;
+  width: 239.687px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.content3{
+  position: relative;
+  top: 120px;
 }
