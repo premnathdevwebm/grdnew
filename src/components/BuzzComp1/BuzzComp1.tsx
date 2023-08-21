@@ -7,8 +7,7 @@ const BuzzComp1 = () => {
     <div className={styles.container}>
       <img src={image1} alt="" className={styles.top1} />
       <h3>Welcome to <span>BUZZ BEE</span></h3>
-      <p>where we transform brands into digital powerhouses! Discover why you'll love becoming our valued client and unlock the full potential of your business.</p>
-      <button>Know more</button>
+      <p>We transform brands into digital powerhouses! Discover why you'll love becoming our valued client and unlock the full potential of your business.</p>
     </div>
     <div>
     <ScrollingText />

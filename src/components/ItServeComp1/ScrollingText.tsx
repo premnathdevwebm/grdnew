@@ -8,8 +8,8 @@ const ScrollingText: React.FC = () => {
   return (
     <div className={styles.scroller}>
        <Marquee>
-        {items.map((ele) => (
-          <Item content={ele} logo={logo} />
+        {items.map((ele, _i) => (
+          <Item key={_i} content={ele} logo={logo} />
         ))}
       </Marquee>
     </div>

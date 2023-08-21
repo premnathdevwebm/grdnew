@@ -33,28 +33,36 @@ const _items = [
   },
   {
     title: "CONTENT CREATION",
-    items: ["Website Content",
+    items: [
+      "Website Content",
       "Branding Content",
       "Social Media Content",
       "Translation",
-      "Copywriting"],
+      "Copywriting",
+    ],
     image: image3,
   },
 ];
-
 const Card = (props) => {
+  const backgroundClass = props.index % 2 === 0 ? 'yellow-bg' : 'white-bg';
+
   return (
     <li className="card">
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <ul className="disc">
-        {props.items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <div className="image-container">
+        <img className="card-image" src={props.image} alt={props.title} />
+      </div>
+      <div className={`carddic ${backgroundClass}`}>
+        <h3>{props.title}</h3>
+        <ul className={`disc ${backgroundClass}`}>
+          {props.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </li>
   );
 };
+
 
 const Carousel = () => {
   const [moveClass, setMoveClass] = useState("");
@@ -108,10 +116,11 @@ const Carousel = () => {
       <ul ref={carouselRef} className={`${moveClass} carousel`}>
         {carouselItems.map((t, index) => (
           <Card
-          key={t.title + index}
-          image={t.image}
-          title={t.title}
-          items={t.items}
+            key={t.title + index}
+            index={index}
+            image={t.image}
+            title={t.title}
+            items={t.items}
           />
         ))}
       </ul>

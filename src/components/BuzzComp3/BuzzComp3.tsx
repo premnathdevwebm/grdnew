@@ -4,7 +4,9 @@ import Carousel from "components/BuzzComp3/Carousel"
 const BuzzComp3 = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.contentbuzz}>
       <Carousel />
+      </div>
     </div>
   )
 }
