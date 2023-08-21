@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  mix-blend-mode: screen;
+  mix-blend-mode: color-burn;
 }
 .container::before {
   content: "";

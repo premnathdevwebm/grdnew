@@ -25,7 +25,7 @@ const HomeComp1 = () => {
         } else {
           clearInterval(interval);
         }
-      }, 100); // Adjust the typing speed here
+      }, 100);
       return () => {
         clearInterval(interval);
       };
