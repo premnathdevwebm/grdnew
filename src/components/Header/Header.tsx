@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaPhoneAlt, FaAngleDown } from "react-icons/fa";
+import {FaEnvelope, FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
 import styles from "components/Header/Header.module.css";
 import logo from "components/Header/assets/golden-royce-design-logo-1@2x.png";
@@ -111,7 +111,7 @@ const Header = () => {
                 >
                   <span className={styles.row2}>
                     <span>CONTACT US</span>
-                    <FaPhoneAlt className="contact-icon" />
+                    <FaEnvelope className="contact-icon" />
                   </span>
                 </NavLink>
               </li>

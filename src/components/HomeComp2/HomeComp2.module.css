@@ -125,6 +125,7 @@
   line-height: 33px;
 }
 .know {
+  cursor: pointer;
   color: #ad000e;
   font-family: Century Gothic;
   font-size: 20px;
