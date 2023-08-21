@@ -38,11 +38,20 @@
   border-radius: 22px;
   background: #fff;
 }
+.content11 ul{
+  position: relative;
+  left: 35px;
+}
 .content12{
   position: absolute;
   top: 0;
   left: 40%;
 }
-.content12 ul{
+.content12 h3, .content12 ul{
   color: #fff;
 }
+.content12 ul{
+  position: relative;
+  left: 35px;
+}
+

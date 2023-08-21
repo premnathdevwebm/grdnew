@@ -1,14 +1,13 @@
 .container {
   margin-right: 80px;
-  color: #FFF;
-font-family: Century Gothic;
-font-size: 31px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  text-decoration-line: underline;
+  color: #fff;
+  font-family: Century Gothic;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
 }
-.container img{
+.container img {
   padding-left: 60px;
 }

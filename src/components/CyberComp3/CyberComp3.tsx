@@ -23,6 +23,7 @@ const CyberComp3 = () => {
         <div className={styles.content12}>
         <img src={image1} alt="" />
         <div>
+        <h3>Infra VA/PT</h3>
           <ul>
           <li>Host Level Security Audit</li>
           <li>lOT Security Audit</li> 

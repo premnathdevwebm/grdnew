@@ -15,7 +15,6 @@ const CyberComp1 = () => {
           safeguard your digital presence, we have the expertise to handle
           diverse requirements
         </p>
-        <button>Connect Us</button>
       </div>
       <div className={styles.content3}>
         <ScrollText />

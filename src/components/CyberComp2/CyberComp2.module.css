@@ -1,13 +1,8 @@
 .container {
   width: 100vw;
-  height: 120vh;
+  height: 130vh;
 
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.83) 0%,
-      rgba(0, 0, 0, 0.83) 100%
-    ),
-    url("./assets/cybercompimg2.png"), lightgray 50% / cover no-repeat;
+  background: url("./assets/cybercompimg2.png"), lightgray 50% / cover no-repeat;
   mix-blend-mode: exclusion;
 }
 
@@ -25,6 +20,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 30px;
 }
 .content h3 span {
   color: #d4af37;
@@ -34,4 +30,3 @@
   font-weight: 700;
   line-height: normal;
 }
-
