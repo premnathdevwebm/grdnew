@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [email, setEmail] = useState("ENTER EMAIL ADDRESS");
 
-
   async function getInTouch() {
     const data = {
       to: email,
@@ -113,9 +112,12 @@ const Footer = () => {
             </div>
             <div className={styles.column}>
               <h3>Support</h3>
-              <p>FAQ</p>
-              <p>Policy</p>
-              <p>Business</p>
+              <Link to="/faq">
+                <p>FAQ</p>
+              </Link>
+              <Link to="/policy">
+                <p>Policy</p>
+              </Link>
             </div>
             <div className={styles.column}>
               <h3>Contact</h3>

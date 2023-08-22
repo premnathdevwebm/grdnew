@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "components/Layout/Layout";
 import Home from "pages/Home";
@@ -8,19 +8,37 @@ import CyberSecurity from "pages/CyberSecurity";
 import ItServices from "pages/ItServices";
 import Contact from "pages/ContactUs";
 import NoMatch from "pages/NoMatch";
+import Splash from "pages/Splash";
+import FAQ from "pages/FAQ"
+import Policy from "pages/Policy"
 function App() {
   const { pathname, hash } = useLocation();
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+    if (showSplash) {
+      const splashTimeout = setTimeout(() => {
+        setShowSplash(false);
+      }, 3000);
+
+      return () => {
+        clearTimeout(splashTimeout);
+      };
     } else {
-      window.scrollTo(0, 0);
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        window.scrollTo(0, 0);
+      }
     }
-  }, [pathname, hash]);
+  }, [pathname, hash, showSplash]);
+
+  if (showSplash) {
+    return <Splash />;
+  }
 
   return (
     <>
@@ -32,6 +50,8 @@ function App() {
           <Route path="verticals/cyber" element={<CyberSecurity />} />
           <Route path="verticals/itservice" element={<ItServices />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="faq" element={<FAQ />} />
+          <Route path="policy" element={<Policy />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

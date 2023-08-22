@@ -3,26 +3,40 @@ import "components/HomeComp4/Carousel.css";
 import image1 from "./assets/Rectangle 79.png";
 import image2 from "./assets/Rectangle 80.png";
 import image3 from "./assets/Rectangle 81.png";
+import image4 from "./assets/Rectangle 82.png";
+import image5 from "./assets/Rectangle 83.png";
 import symbol from "./assets/symbol.svg";
 
 const _items= [
   {
-    title: "Efren Reyes",
-    desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
+    title: "Gopinath",
+    desc: "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.",
     image: image1,
-    role: "client",
+    role: "CEO - MediTech",
   },
   {
-    title: "Efren Reyes I",
-    desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
+    title: "Sherene",
+    desc: "Partnering with GRD was a game-changer for our company. Their design team breathed new life into our branding, giving it a modern and appealing look.",
     image: image2,
-    role: "client",
+    role: "PRO - Ranger",
   },
   {
-    title: "Efren Reyes II",
-    desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
+    title: "Ajitha Sheril",
+    desc: "GRD IT solutions optimized our checkout process, ensuring secure transactions. It's clear that their expertise lies in marrying design with technology.",
     image: image3,
-    role: "client",
+    role: "HR - Altimetrix",
+  },
+  {
+    title: "Sairam Yadalla",
+    desc: "Thanks to the exceptional expertise of their hacking IT service, our company's cybersecurity has been fortified beyond expectations.",
+    image: image4,
+    role: "Director - Next-Gen",
+  },
+  {
+    title: "Rithish",
+    desc: 'GRD managed to retrieve crucial files that I thought were lost forever. Their quick response and effective solutions turned a potential disaster into a success story.',
+    image: image5,
+    role: "Founder - FarmVilla",
   },
 ];
 
