@@ -24,24 +24,24 @@ const Header = () => {
       <div className={styles.colnav}>
       <Link to="/verticals/buzzebee"><h3>BUZZ-BEE</h3></Link>
         <ul>
-          <li>
-            <Link to="/verticals/buzzebee">From Idea To Icon</Link>
+          <li className={styles.colnav111}>
+            From Idea To Icon
           </li>
         </ul>
       </div>
       <div className={styles.colnav}>
       <Link to="/verticals/itservice"><h3>IT SERVICES & SOLUTIONS</h3></Link>
         <ul>
-          <li>
-            <Link to="/verticals/itservice">Your Vision Our Technology</Link>
+          <li className={styles.colnav111}>
+            Your Vision Our Technology
           </li>
         </ul>
       </div>
       <div className={styles.colnav}>
       <Link to="/verticals/cyber"> <h3>CYBER SECURITY</h3></Link>
         <ul>
-          <li>
-            <Link to="/verticals/cyber">Secure Today</Link>
+          <li className={styles.colnav111}>
+            Secure Today
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 130vh;
+  min-height: 120vh;
 
   background: url("./assets/cybercompimg2.png"), lightgray 50% / cover no-repeat;
   mix-blend-mode: exclusion;

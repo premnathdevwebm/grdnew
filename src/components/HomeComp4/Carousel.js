@@ -28,10 +28,10 @@ const _items= [
 
 const Card = (props) => {
   return (
-    <li className="card">
+    <li className="card1">
       <img src={props.image} alt={props.title} />
       <h3>{props.title}</h3>
-      <div className="disc">
+      <div className="disc1">
         <img src={symbol} alt="symb" />
         <span>&quot;</span>
         <p>{props.desc}</p>
@@ -81,8 +81,8 @@ const Carousel= () => {
   };
 
   return (
-    <div className="carouselwrapper module-wrapper">
-      <div className="ui">
+    <div className="carouselwrapper1 module-wrapper">
+      <div className="ui1">
         <button onClick={() => setMoveClass("prev")} className="prev">
           <span className="material-icons">chevron_left</span>
         </button>
@@ -90,7 +90,7 @@ const Carousel= () => {
           <span className="material-icons">chevron_right</span>
         </button>
       </div>
-      <ul ref={carouselRef} className={`${moveClass} carousel`}>
+      <ul ref={carouselRef} className={`${moveClass} carousel1`}>
         {carouselItems.map((t, index) => (
           <Card
             key={t.title + index}

@@ -1,7 +1,7 @@
 .rectangleParent4 {
   position: fixed;
   top: 65vh;
-  right: 1rem;
+  right: 1.5rem;
   width: 12rem;
   height: 6.31rem;
   font-size: var(--font-size-base);
@@ -32,7 +32,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4.27rem;
+  width: 4.7rem;
   height: 6.31rem;
   object-fit: cover;
   cursor: pointer;
@@ -43,7 +43,7 @@
   top: 2.4rem;
   left: 4.83rem;
   display: inline-block;
-  width: 5.69rem;
+  width: 7.49rem;
   height: 1.33rem;
   cursor: pointer;
 }

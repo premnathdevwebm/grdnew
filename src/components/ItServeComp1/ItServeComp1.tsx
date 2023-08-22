@@ -4,7 +4,7 @@ const ItServeComp1 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h3>IT Solutions for your Business</h3>
+        <h3>IT Services & Solutions</h3>
         <p>Elevate your business with our comprehensive IT solutions, tailored for all - small ventures, startups, and enterprises. From optimizing infrastructure to boosting productivity, we're your partners in IT excellence.</p>
       </div>
       <div className={styles.contet}>

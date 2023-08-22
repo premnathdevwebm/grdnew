@@ -119,10 +119,18 @@
   margin-bottom: 20px;
 }
 
+.colnav a{
+  color: var(--color-red);
+}
+
 .colnav ul {
   display: flex;
   flex-direction: column;
   list-style: circle;
+}
+
+.colnav111{
+  color: #f0c545;
 }
 
 .colnav ul li {

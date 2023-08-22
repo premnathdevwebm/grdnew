@@ -24,7 +24,7 @@ const VerticalNav = () => {
         onClick={toggleLinks}
       />
       <b className={styles.connect} onClick={toggleLinks}>
-        START HERE
+        ROAR WITH US!
       </b>
       <div
         className={

@@ -20,14 +20,14 @@
   }
 }
 
-.carouselwrapper {
+.carouselwrapper1 {
   display: flex;
   overflow: hidden;
   background: var(--color-lightgrey);
   position: relative;
 }
 
-.carousel {
+.carousel1 {
   width: var(--carouselWidth);
   margin: 0 0 0 var(--carouselLeftMargin);
   display: flex;
@@ -36,26 +36,26 @@
   padding: 0;
 }
 
-.carousel.prev {
+.carousel1.prev {
   animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
   animation-name: prev;
 }
 
-.carousel.next {
+.carousel1.next {
   animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
   animation-name: next;
 }
 
-.carousel li {
+.carousel1 li {
   padding: 50px;
   text-align: center;
   width: calc(var(--cardWidth) - var(--card-margin) * 2);
   box-sizing: border-box;
 }
 
-.ui {
+.ui1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@
   z-index: 100;
 }
 
-.ui button {
+.ui1 button {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -80,16 +80,16 @@
   margin-bottom: 10px; 
 }
 
-.ui button:hover {
+.ui1 button:hover {
   background: var(--color-ui-hover);
 }
 
-.ui button:focus {
+.ui1 button:focus {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.card {
+.card1 {
   box-shadow: 0px 1px 2px 0px var(--card-shadow);
   border-radius: 4px;
   margin: var(--card-margin);
@@ -97,30 +97,30 @@
   overflow: hidden;
 }
 
-.card .material-icons {
+.card1 .material-icons {
   font-size: 4.8rem;
 }
-.card img {
+.card1 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-.card p {
+.card1 p {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.4rem;
   margin-bottom: 0;
 }
-.disc {
+.disc1 {
   background-color: #b3b3b3;
   position: relative;
 }
-.disc img {
+.disc1 img {
   position: absolute;
   width: 26px;
   top: -18px;
   left: -14px;
 }
-.disc span {
+.disc1 span {
   position: absolute;
   top: -12px;
   left: -2px;

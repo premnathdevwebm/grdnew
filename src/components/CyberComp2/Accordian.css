@@ -3,42 +3,74 @@
     padding: 10px;
     margin-bottom: 10px;
     width: 80%;
+    max-height: 300px;
     cursor: pointer;
     color: #ccc;
   }
   
   .accordianTitle {
     font-weight: bold;
+    color: #05F1DA;
+  }
+
+  .open .accordianTitle {
+    color: white;
   }
   
   .accordianText {
     margin-top: 10px;
     display: none;
+
   }
   
   .open .accordianText {
-    display: block;
+    display: flex;
+    width: 100%;
+    
+  }
+
+  .open .accordianText p{
+    flex: 1;
+    width: 60%;
+  }
+
+  .open .accordianText img{
+    max-width: 10%;
+    flex: 1;
+    object-fit: cover;
+  }
+
+  .accordianImage{
+    width: 100%;
   }
 
   .singleAccordian {
-    border: 1px solid #ccc;
+    border: none;
+    border-top: 1px solid #05F1DA;
     padding: 10px;
     margin-bottom: 10px;
     width: 80%;
     cursor: pointer;
     color: #ccc;
-    position: relative; /* Add this */
+    position: relative; 
   }
   
   .accordianTitle {
     font-weight: bold;
-    display: flex; /* Add this */
-    justify-content: space-between; /* Add this */
-    align-items: center; /* Add this */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
   }
   
   .toggleSign {
-    font-weight: bold; /* Add this to make the plus or minus bold */
+    border: 1px solid #05F1DA;
+    border-radius: 50%;
+    color: black;
+    font-size: 16px;
+    background-color: #05F1DA;
+    font-weight: 800;
+    padding: 3px 3px;
+    font-weight: bold; 
   }
   
   .accordianText {
@@ -47,5 +79,10 @@
   }
   
   .open .accordianText {
-    display: block;
+    display: flex;
+    width: 100%;
+
+  }
+  .open .accordianText p{
+    width: 60%;
   }

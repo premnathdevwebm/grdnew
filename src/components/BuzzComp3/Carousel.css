@@ -100,6 +100,7 @@
   border-radius: 4px;
   margin: var(--card-margin);
   background: var(--color-white);
+  overflow: hidden;
 }
 
 .card .material-icons {
@@ -130,7 +131,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 .carddic h3 {
   height: 40px;
   text-decoration: underline;
