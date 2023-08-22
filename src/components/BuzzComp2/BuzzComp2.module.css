@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background: #FFF8E7;
 }
 .content{
@@ -9,8 +9,10 @@
 }
 .grid-container {
   width: 80%;
-  margin: auto;
+  margin: 60px auto;
   display: grid;
+  font-family: var(--font-century-gothic);
+  font-weight: 700;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0; 
@@ -107,6 +109,7 @@
 }
 .grid-item4 i{
   color: #fff; 
+  font-size: 12px;
 }
   
 .grid-item5 {

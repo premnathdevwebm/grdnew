@@ -110,7 +110,6 @@ const _items = [
 ];
 const Card = (props) => {
   const backgroundClass = props.index % 2 === 0 ? "yellow-bg" : "white-bg";
-
   return (
     <li className="card">
       <div className="image-container">
@@ -128,14 +127,21 @@ const Card = (props) => {
   );
 };
 
-const Carousel = () => {
+const Carousel = ({context}) => {
   const [moveClass, setMoveClass] = useState("");
   const [carouselItems, setCarouselItems] = useState(_items);
+  const targetIndex = carouselItems.findIndex(item => item.title === context);
   const carouselRef = useRef(null);
 
   useEffect(() => {
+    if (targetIndex !== -1) {
+      const updatedCarouselItems = [...carouselItems];
+      const targetObject = updatedCarouselItems.splice(targetIndex, 1)[0];
+      updatedCarouselItems.unshift(targetObject);
+      setCarouselItems(updatedCarouselItems);
+    }
     document.documentElement.style.setProperty("--num", carouselItems.length);
-  }, [carouselItems]);
+  }, [carouselItems, targetIndex]);
 
   const handleAnimationEnd = useCallback(() => {
     if (moveClass === "prev") {
