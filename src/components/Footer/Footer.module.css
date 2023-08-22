@@ -41,6 +41,11 @@
   line-height: normal;
 }
 
+.contactNow:hover{
+  color: #bda96c;
+  background-color: black;
+}
+
 .whatWeDoParent {
   display: flex;
   width: 100vw;
