@@ -61,3 +61,30 @@
     position: relative;
     top: 220px
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .content {
+    top: 80px;
+    left: 60px;
+  }
+
+  .content h3 {
+    font-size: 60px;
+    width: 40%;
+  }
+
+  .content p {
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .content button {
+    top: 110%;
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .contet {
+    top: 180px;
+  }
+}

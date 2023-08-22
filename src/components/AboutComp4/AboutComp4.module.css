@@ -58,3 +58,16 @@
   color: #ad000e;
   background: #d4af37;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .contain img {
+    position: absolute;
+    left: 180px;
+    height: 80%;
+  }
+  .contain div{
+    font-size: 18px;
+    padding: 10px;
+    line-height: 32px;
+  }
+}

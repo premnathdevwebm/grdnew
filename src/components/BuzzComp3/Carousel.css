@@ -155,6 +155,27 @@
   height: 100%;
   background-color: white;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  :root {
+    --up: 4;
+  }
+
+  .carouselwrapper {
+    height: 500px;
+  }
+
+  .carousel {
+    height: 500px;
+  }
+  .card {
+    margin: var(--card-margin);
+    background: var(--color-white);
+    overflow: hidden;
+    
+  }
+}
+
 @keyframes next {
   from {
     transform: translateX(0px);

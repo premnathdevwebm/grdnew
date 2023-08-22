@@ -29,3 +29,21 @@
   font-weight: 700;
   line-height: normal;
 }
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .container{
+    min-height: 130vh;
+  }
+
+  .content {
+    left: 50px;
+  }
+
+  .content h3 {
+    font-size: 29px;
+    margin-bottom: 50px;
+  }
+  
+  .content h3 span {
+    font-size: 29px;
+  }
+}

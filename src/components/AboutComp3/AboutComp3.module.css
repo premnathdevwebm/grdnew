@@ -107,3 +107,20 @@
 .points li{
     padding-bottom: 15px;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .points {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    font-family: Century Gothic;
+    font-size: 18px;
+  }
+  .points li{
+    padding-bottom: 15px;
+}
+.context {
+  margin: 20px 90px;
+}
+}

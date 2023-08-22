@@ -183,3 +183,13 @@
 .grid-item8 p {
   color: #151236; 
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .grid-container{
+    width: 60%;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+  }
+}

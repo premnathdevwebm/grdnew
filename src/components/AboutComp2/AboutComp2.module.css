@@ -61,3 +61,24 @@
   line-height: 33px;
   padding-bottom: 10px;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .content2 {
+    width: 55%;
+    padding: 30px; 
+    position: absolute;
+    top: 105px;
+    left: 520px; 
+  }
+
+  .content2 h3 {
+    font-size: 18px; 
+    margin-bottom: 15px; 
+  }
+
+  .content2 p {
+    font-size: 18px; 
+    line-height: 28px; 
+    padding-bottom: 8px; 
+  }
+}

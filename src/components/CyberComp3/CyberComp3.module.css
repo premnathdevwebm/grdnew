@@ -56,3 +56,48 @@
   left: 35px;
 }
 
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .container {
+    height: 50vw;
+  }
+
+  .container .content {
+    width: 60%;
+    left: 50px;
+    top: 50px;
+  }
+
+  .cyber, .service {
+    font-size: 50px;
+  }
+
+  .content1 {
+    left: 350px;
+  }
+
+  .content11 {
+    width: 25%;
+    padding: 50px;
+  }
+
+  .content11 ul {
+    left: 30px;
+  }
+
+  .content12 {
+    left: 35%;
+  }
+
+  .content12 img{
+    width: 68%;
+  }
+
+  .content12 h3, .content12 ul {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .content12 ul {
+    left: 45px;
+  }
+}

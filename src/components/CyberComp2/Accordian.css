@@ -94,3 +94,31 @@
 .open .accordianText p {
   width: 60%;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .singleAccordian {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .toggleSign {
+    font-size: 14px;
+    padding: 2px 5px;
+  }
+
+  .accordianTitle {
+    font-size: 18px;
+  }
+
+  .open .accordianTitle {
+    color: #05F1DA;
+  }
+
+  .open .accordianText img {
+    max-width: 15%;
+  }
+
+  .open .accordianText p {
+    width: 70%;
+  }
+}

@@ -103,3 +103,9 @@
   color: #fff;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.25);
 }
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .form-container{
+    padding-left: 150px;
+  }
+}
