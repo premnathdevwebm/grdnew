@@ -42,6 +42,61 @@ const _items = [
     ],
     image: image3,
   },
+  {
+    title: "VISUAL STRATEGIES",
+    items: [
+      "Website Content",
+      "Branding Content",
+      "Social Media Content",
+      "Translation",
+      "Copywriting",
+    ],
+    image: image3,
+  },
+  {
+    title: "Prososal ",
+    items: [
+      "Website Content",
+      "Branding Content",
+      "Social Media Content",
+      "Translation",
+      "Copywriting",
+    ],
+    image: image3,
+  },
+  {
+    title: "CONTENT CREATION",
+    items: [
+      "Website Content",
+      "Branding Content",
+      "Social Media Content",
+      "Translation",
+      "Copywriting",
+    ],
+    image: image3,
+  },
+  {
+    title: "CONTENT CREATION",
+    items: [
+      "Website Content",
+      "Branding Content",
+      "Social Media Content",
+      "Translation",
+      "Copywriting",
+    ],
+    image: image3,
+  },
+  {
+    title: "CONTENT CREATION",
+    items: [
+      "Website Content",
+      "Branding Content",
+      "Social Media Content",
+      "Translation",
+      "Copywriting",
+    ],
+    image: image3,
+  },
 ];
 const Card = (props) => {
   const backgroundClass = props.index % 2 === 0 ? 'yellow-bg' : 'white-bg';

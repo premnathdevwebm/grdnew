@@ -14,7 +14,6 @@
   height: 80%;
 }
 
-
 .contain div {
   width: 50%;
   padding: 20px;
@@ -33,3 +32,29 @@
   line-height: 33px;
 }
 
+.broucher-container {
+  position: relative;
+  top: -20px;
+  left: 120px;
+  width: 80%;
+}
+
+.bruchers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bruchers button {
+  padding: 5px;
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+  color: #d4af37;
+  background: #ad000e;
+}
+
+.bruchers button:hover {
+  color: #ad000e;
+  background: #d4af37;
+}

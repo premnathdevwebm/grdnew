@@ -23,10 +23,12 @@
 .carouselwrapper {
   display: flex;
   background: var(--color-shadow);
-  height: 600px;
+  height: 550px;
+  flex-wrap: nowrap;
   position: relative;
   top: 30px;
-  left: 280px;
+  left: 100px;
+  overflow: hidden;
   border-radius: 38px 0px 0px 38px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: aliceblue;
@@ -35,10 +37,10 @@
 
 .carousel {
   width: var(--carouselWidth);
-  margin: 0 0 0 var(--carouselLeftMargin);
-  height: 50px;
+  margin: 40px 0 40px 0;
+  height: 550px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   padding: 0;
 }
@@ -56,7 +58,7 @@
 }
 
 .carousel li {
-  padding: 30px;
+
   width: calc(var(--cardWidth) - var(--card-margin) * 2);
   box-sizing: border-box;
 }
@@ -133,6 +135,7 @@
 }
 .carddic h3 {
   height: 40px;
+  text-align: center;
   text-decoration: underline;
   margin-bottom: 5px;
 }
