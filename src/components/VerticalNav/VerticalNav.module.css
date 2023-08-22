@@ -1,9 +1,9 @@
 .rectangleParent4 {
   position: fixed;
-  top: 65vh;
+  top: 85vh;
   right: 1.5rem;
-  width: 12rem;
-  height: 6.31rem;
+  width: 13rem;
+  height: 6.51rem;
   font-size: var(--font-size-base);
   color: #c0ab6d;
   z-index: 200;
@@ -14,19 +14,19 @@
   top: 1.6rem;
   left: 1.2rem;
   background-color: var(--color-white);
-  width: 10.1rem;
+  width: 11.1rem;
   height: 2.7rem;
 }
 .ellipseDiv {
-  top: 0.85rem;
-  left: -0.13rem;
+  top: 0.75rem;
+  left: -0.1rem;
   border-radius: 50%;
   background-color: var(--color-darkkhaki-100);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border: 5px solid var(--color-white);
   box-sizing: border-box;
-  width: 4.54rem;
-  height: 4.54rem;
+  width: 4.84rem;
+  height: 4.74rem;
 }
 .lion3x1Icon {
   position: absolute;

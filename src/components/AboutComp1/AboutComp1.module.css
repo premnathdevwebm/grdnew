@@ -10,13 +10,13 @@
       url("./assets/logo_figma 1.png");
     background-repeat: no-repeat;
     background-position: center right;
-    background-size: contain, 700px 500px; 
+    background-size: contain, 650px 450px; 
 
   }
 .content {
   position: relative;
   top: 60px;
-  left: 90px;
+  left: 80px;
 }
 .content h2 {
   color: #d4af37;

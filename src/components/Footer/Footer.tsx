@@ -4,6 +4,7 @@ import logo from "components/Footer/assets/golden-royce-design-logo-1@2x.png";
 import logo1 from "components/Footer/assets/Facebook_logo_PNG12 3.png";
 import logo2 from "components/Footer/assets/whatsapp 1.png";
 import logo3 from "components/Footer/assets/Instagram_logo_PNG12 3.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("ENTER EMAIL ADDRESS");
@@ -28,23 +29,22 @@ const Footer = () => {
             <p className={styles.thin}>BUISNESS MADE SMART</p>
           </div>
           <div className={styles.fotterlogo}>
-            <img src={logo1} alt="" className={styles.logosocial} />
-            <img src={logo2} alt="" className={styles.logosocial} />
-            <img src={logo3} alt="" className={styles.logosocial} />
+          <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><img src={logo1} alt="" className={styles.logosocial} /></a>
+          <a href="https://wa.me" target="_blank" rel="noreferrer"><img src={logo2} alt="" className={styles.logosocial} /></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer"> <img src={logo3} alt="" className={styles.logosocial} /></a>
           </div>
         </div>
         <div className={styles.whatWeDo2}>
           <div className={styles.row}>
             <div className={styles.column}>
               <h3>What We Do</h3>
-              <p>Cyber Security</p>
-              <p>Buzz - Bee</p>
-              <p>IT Services and Solutions</p>
+              <Link to="/verticals/cyber"><p>Cyber Security</p></Link>
+              <Link to="/verticals/buzzebee"><p>Buzz - Bee</p></Link>
+              <Link to="/verticals/itservice"><p>IT Services and Solutions</p></Link>
             </div>
             <div className={styles.column}>
               <h3>Company</h3>
-              <p>About Us</p>
-              <p>Verticals</p>
+              <Link to="/about"><p>About Us</p></Link>
             </div>
             <div className={styles.column}>
               <h3>Support</h3>
