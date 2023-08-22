@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "components/Layout/Layout";
 import Home from "pages/Home";
 import About from "pages/About";
@@ -8,6 +9,19 @@ import ItServices from "pages/ItServices";
 import Contact from "pages/ContactUs";
 import NoMatch from "pages/NoMatch";
 function App() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
   return (
     <>
       <Routes>
