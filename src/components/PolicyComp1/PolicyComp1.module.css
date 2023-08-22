@@ -1,0 +1,48 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+}
+.content {
+  display: flex;
+  padding: 20px;
+}
+.textcont {
+  flex: 1;
+  padding: 10px;
+}
+
+.textcont h3 {
+  color: #ad000e;
+  font-family: DM Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.425px;
+  text-transform: uppercase;
+}
+
+.textcont p {
+    color: #040404;
+    text-align: justify;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+}
+
+.imgcont {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgcont img {
+    max-width: 100%;
+    max-height: 100%;
+}
