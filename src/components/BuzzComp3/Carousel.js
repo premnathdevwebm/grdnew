@@ -3,6 +3,11 @@ import "components/BuzzComp3/Carousel.css";
 import image1 from "./assets/Rectangle 141.png";
 import image2 from "./assets/Rectangle 142.png";
 import image3 from "./assets/Rectangle 143.png";
+import image4 from "./assets/Rectangle 144.png";
+import image5 from "./assets/Rectangle 145.png";
+import image6 from "./assets/Rectangle 146.png";
+import image7 from "./assets/Rectangle 147.png";
+import image8 from "./assets/Rectangle 148.png";
 
 const _items = [
   {
@@ -22,7 +27,7 @@ const _items = [
     title: "PRINTING AND DESIGN",
     items: [
       "Brochures & Catalogues",
-      " Pitch Decks",
+      "Pitch Decks",
       "Newsletter",
       "Annual Report",
       "Company Profile",
@@ -43,63 +48,68 @@ const _items = [
     image: image3,
   },
   {
+    title: "PROPOSAL, PITCH & DESIGNING",
+    items: [
+      "Business Proposal",
+      "Pitch Deck",
+      "Company Profile",
+      "Corporate Presentation",
+      "Official Documents",
+    ],
+    image: image4,
+  },
+  {
     title: "VISUAL STRATEGIES",
     items: [
-      "Website Content",
-      "Branding Content",
-      "Social Media Content",
-      "Translation",
-      "Copywriting",
+      "Explainer Videos",
+      "Documentaries",
+      "Photography",
+      "Corporate Videos",
+      "Videography",
+      "Animation Videos",
     ],
-    image: image3,
+    image: image5,
   },
   {
-    title: "Prososal ",
+    title: "BRAND STRATEGY SERVICES",
     items: [
-      "Website Content",
-      "Branding Content",
-      "Social Media Content",
-      "Translation",
-      "Copywriting",
+      "Brand Creation",
+      "Brand Identity, Insights & Positioning",
+      "Messaging & Narratives",
+      "Brand Experiences",
+      "Campaign Development",
     ],
-    image: image3,
+    image: image6,
   },
   {
-    title: "CONTENT CREATION",
+    title: "ADVERTISING SOLUTIONS",
     items: [
-      "Website Content",
-      "Branding Content",
-      "Social Media Content",
-      "Translation",
-      "Copywriting",
+      "Television Commercials",
+      "Radio",
+      "Celebrity Endorsements",
+      "Print Media",
+      "Media Buying",
+      "Outdoor Branding",
+      "Strategy Planning",
+      "Paper Production",
     ],
-    image: image3,
+    image: image7,
   },
   {
-    title: "CONTENT CREATION",
+    title: "PACKAGING SOLUTIONS",
     items: [
-      "Website Content",
-      "Branding Content",
-      "Social Media Content",
-      "Translation",
-      "Copywriting",
+      "Moduled Packaging Design",
+      "Packaging Label Design",
+      "Identical Packaging Design",
+      "Secure Packaging Design",
+      "Product Packaging Design",
+      "Bottle Packaging Design",
     ],
-    image: image3,
-  },
-  {
-    title: "CONTENT CREATION",
-    items: [
-      "Website Content",
-      "Branding Content",
-      "Social Media Content",
-      "Translation",
-      "Copywriting",
-    ],
-    image: image3,
+    image: image8,
   },
 ];
 const Card = (props) => {
-  const backgroundClass = props.index % 2 === 0 ? 'yellow-bg' : 'white-bg';
+  const backgroundClass = props.index % 2 === 0 ? "yellow-bg" : "white-bg";
 
   return (
     <li className="card">
@@ -117,7 +127,6 @@ const Card = (props) => {
     </li>
   );
 };
-
 
 const Carousel = () => {
   const [moveClass, setMoveClass] = useState("");
