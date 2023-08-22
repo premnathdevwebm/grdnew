@@ -3,19 +3,34 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-body{
-overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+body {
+  overflow-x: hidden;
 }
-*,body {
+*,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: normal;
 }
-#root, .App {
-  width: 100vw; 
-  overflow-x: hidden; 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  background-color: transparent;
+}
+#root,
+.App {
+  width: 100vw;
+  overflow-x: hidden;
 }
 :root {
   /* fonts */
@@ -72,7 +87,7 @@ overflow-x: hidden;
   --color-black: #000;
   --color-firebrick-100: #9c1817;
   --color-crimson: #dc3232;
-  --color-red: #AD000E;
+  --color-red: #ad000e;
   --color-antiquewhite: rgba(217, 211, 192, 0.3);
   --primary-main: #0195f7;
   --color-lightgray: #d0d5dd;

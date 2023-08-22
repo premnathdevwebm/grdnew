@@ -80,17 +80,17 @@
   background-color: transparent;
 }
 
-.row input{
-    border-bottom: 2px solid #D4AF37;
+.row input {
+  border-bottom: 2px solid #d4af37;
 }
 
-.column2 textarea{
-    border: 2px solid #D4AF37;
+.column2 textarea {
+  border: 2px solid #d4af37;
 }
 
 .column3 button {
   cursor: pointer;
-  background-color: #BDA96CA3;
+  background-color: #bda96ca3;
   padding: 15px 30px;
   border-radius: 10%;
   color: #000;
@@ -99,7 +99,7 @@
 }
 
 .column3 button:hover {
-    background-color: #FA6103;
-    color: #FFF;
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.25); 
-  }
+  background-color: #fa6103;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.25);
+}

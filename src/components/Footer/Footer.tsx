@@ -11,8 +11,6 @@ const Footer = () => {
   const [email, setEmail] = useState("ENTER EMAIL ADDRESS");
 
   async function getInTouch() {
-    console.log("ggg");
-
     const data = {
       to: email,
       subject: "Get In Touch",
@@ -88,7 +86,6 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
               <img src={logo3} alt="" className={styles.logosocial} />
             </a>
           </div>
@@ -121,7 +118,7 @@ const Footer = () => {
             </div>
             <div className={styles.column}>
               <h3>Contact</h3>
-              <p>WhatsApp</p>
+              <Link to="/contact"><p>Contact Us</p></Link>
             </div>
           </div>
         </div>
