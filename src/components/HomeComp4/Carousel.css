@@ -3,13 +3,13 @@
 
 :root {
   --up: 2;
-  --card-margin: 12px;
+  --card-margin: 10px;
   --card-shadow: rgba(46, 49, 52, 0.4);
   --color-white: #fff;
   --color-lightgrey: #ccc;
   --color-ui: #999;
   --color-ui-hover: #666;
-  --cardWidth: calc(86vw / var(--up));
+  --cardWidth: calc(96vw / var(--up));
   --carouselWidth: calc(var(--cardWidth) * var(--num));
   --carouselLeftMargin: calc(29vw - var(--cardWidth));
 }
@@ -29,7 +29,7 @@
 
 .carousel1 {
   width: var(--carouselWidth);
-  margin: 0 0 0 var(--carouselLeftMargin);
+  margin: 0 0 0 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -49,13 +49,14 @@
 }
 
 .carousel1 li {
-  padding: 50px;
+  padding: 35px;
   text-align: center;
   width: calc(var(--cardWidth) - var(--card-margin) * 2);
   box-sizing: border-box;
 }
 
 .ui1 {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,8 +91,10 @@
 }
 
 .card1 {
+  overflow: hidden;
   box-shadow: 0px 1px 2px 0px var(--card-shadow);
   border-radius: 4px;
+  width: 650px;
   margin: var(--card-margin);
   background: var(--color-white);
   overflow: hidden;
@@ -106,6 +109,8 @@
   display: block;
 }
 .card1 h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #d4af37;
   font-family: var(--font-century-gothic), sans-serif;
 }
@@ -127,6 +132,7 @@
 }
 .disc1 span {
   position: absolute;
+  font-weight: 700;
   top: -12px;
   left: -2px;
   color: #fff;
@@ -136,6 +142,7 @@
 
 .card1 > span {
   text-align: center;
+  font-weight: 700;
   font-family: Century Gothic;
   font-size: 26px;
 }

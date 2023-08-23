@@ -58,30 +58,6 @@
   position: absolute;
   overflow: hidden;
   left: 450px;
-  top: 160px;
-}
-
-@media screen and (min-width: 801px) and (max-width: 1400px){
-  .title{
-    top: 330px;
-    left: 200px;
-    font-size: 24px;
-  }
-
-  .symbolTest{
-    top: 50px;
-    left: 230px;
-  }
-
-  .doublquoteMain{
-    top: 70px;
-  }
-
-  .carcarousel{
-    position: absolute;
-    overflow: hidden;
-    left: 400px;
-    top: 95px;
-    background-color: transparent;
-  }
+  height: 495px;
+  top: 120px;
 }

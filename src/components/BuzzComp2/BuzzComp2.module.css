@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 120vh;
+  height: 90vh;
   background: #FFF8E7;
 }
 .content{
@@ -9,7 +9,7 @@
 }
 .grid-container {
   width: 80%;
-  margin: 60px auto;
+  margin: 30px auto;
   display: grid;
   font-family: var(--font-century-gothic);
   font-weight: 700;

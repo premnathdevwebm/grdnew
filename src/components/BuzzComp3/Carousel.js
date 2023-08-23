@@ -127,30 +127,41 @@ const Card = (props) => {
   );
 };
 
-const Carousel = ({context}) => {
+const Carousel = ({ context, changeContext }) => {
   const [moveClass, setMoveClass] = useState("");
   const [carouselItems, setCarouselItems] = useState(_items);
-  const targetIndex = carouselItems.findIndex(item => item.title === context);
   const carouselRef = useRef(null);
 
   useEffect(() => {
+    let targetIndex = carouselItems.findIndex((item) => item.title === context);
     if (targetIndex !== -1) {
       const updatedCarouselItems = [...carouselItems];
       const targetObject = updatedCarouselItems.splice(targetIndex, 1)[0];
       updatedCarouselItems.unshift(targetObject);
       setCarouselItems(updatedCarouselItems);
+      changeContext("")
     }
     document.documentElement.style.setProperty("--num", carouselItems.length);
-  }, [carouselItems, targetIndex]);
+  }, [carouselItems, changeContext, context]);
 
   const handleAnimationEnd = useCallback(() => {
     if (moveClass === "prev") {
-      shiftNext([...carouselItems]);
+      setCarouselItems((prevItems) => {
+        let intermediate = [...prevItems];
+        let lastCard = intermediate.pop();
+        intermediate.unshift(lastCard);
+        return intermediate;
+      });
     } else if (moveClass === "next") {
-      shiftPrev([...carouselItems]);
+      setCarouselItems((prevItems) => {
+        let intermediate = [...prevItems];
+        let firstCard = intermediate.shift();
+        intermediate.push(firstCard);
+        return intermediate;
+      });
     }
     setMoveClass("");
-  }, [moveClass, carouselItems]);
+  }, [moveClass]);
 
   useEffect(() => {
     const carouselElement = carouselRef.current;
@@ -159,19 +170,9 @@ const Carousel = ({context}) => {
     return () => {
       carouselElement.removeEventListener("animationend", handleAnimationEnd);
     };
-  }, [carouselItems, handleAnimationEnd]);
+  }, [handleAnimationEnd, moveClass]);
 
-  const shiftPrev = (copy) => {
-    let lastcard = copy.pop();
-    copy.unshift(lastcard);
-    setCarouselItems(copy);
-  };
-
-  const shiftNext = (copy) => {
-    let firstcard = copy.shift();
-    copy.push(firstcard);
-    setCarouselItems(copy);
-  };
+  
 
   return (
     <div className="carouselwrapper module-wrapper">

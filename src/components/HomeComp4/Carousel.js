@@ -27,10 +27,10 @@ const _items= [
     role: "HR - Altimetrix",
   },
   {
-    title: "Sairam Yadalla",
+    title: "Guna",
     desc: "Thanks to the exceptional expertise of their hacking IT service, our company's cybersecurity has been fortified beyond expectations.",
     image: image4,
-    role: "Director - Next-Gen",
+    role: "Founder - Good Life",
   },
   {
     title: "Rithish",

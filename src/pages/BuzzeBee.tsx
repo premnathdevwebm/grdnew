@@ -12,7 +12,7 @@ const BuzzeBee = () => {
     <div className={styles.container}>
       <BuzzComp1 />
       <BuzzComp2 changeContext={changeContext} />
-      <BuzzComp3 context={context} />
+      <BuzzComp3 context={context} changeContext={changeContext} />
     </div>
   )
 }
