@@ -21,10 +21,10 @@ const _items= [
     role: "PRO - Ranger",
   },
   {
-    title: "Ajitha Sheril",
+    title: "Aravinthakrishnan",
     desc: "GRD IT solutions optimized our checkout process, ensuring secure transactions. It's clear that their expertise lies in marrying design with technology.",
     image: image3,
-    role: "HR - Altimetrix",
+    role: "Lead - Designer Infosys",
   },
   {
     title: "Guna",
