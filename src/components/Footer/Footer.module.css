@@ -73,6 +73,16 @@
   font-weight: 700;
   line-height: 160%;
 }
+
+.content .bold{
+  font-weight: 800;
+}
+.content .thin{
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
 .whatWeDo1 .fotterlogo {
   margin-top: 10px;
   display: flex;
