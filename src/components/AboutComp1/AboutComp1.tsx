@@ -26,7 +26,7 @@ const AboutComp1 = () => {
       <div className={styles.content}>
         <h2>{typewriterText}</h2>
         <div className={styles.content1}>
-          <p>"We Don’t Just Meet Expectations We Exceed Them.</p>
+          <p>We Don’t Just Meet Expectations we Exceed Them.</p>
           <div className={styles.buttonsect}>
            <a href="#about"> <button className={styles.about}>About Us</button></a>
            <a href="#why">  <button  className={styles.why}>Why Us ?</button></a>

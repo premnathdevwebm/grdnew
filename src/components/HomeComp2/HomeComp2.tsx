@@ -57,8 +57,7 @@ const HomeComp2 = () => {
             <div className={styles.about}>About Us</div>
             <div className={styles.aboutcontent}>
               We are a dynamic and innovative company specializing in three key
-              verticals: Cyber Security, Digital Marketing & Advertising, and IT
-              Solutions and Services.
+              verticals: Cyber Security, IT Solutions & all things marketing.
             </div>
             <div className={styles.know} onClick={() => navigate("/about#about")}>
               Know More &rarr;
@@ -85,8 +84,7 @@ const HomeComp2 = () => {
             <div className={styles.why}>Why Us ?</div>
             <div className={styles.whycontent}>
               Choose Golden Royce Design as your trusted partner for cyber
-              security, digital marketing & advertising, and IT solutions and
-              services.
+              security, IT Solutions & all things marketing.
             </div>
             <div className={styles.know} onClick={() => navigate("/about#why")}>
               Know More &rarr;

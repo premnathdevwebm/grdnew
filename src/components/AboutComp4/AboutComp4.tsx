@@ -48,13 +48,13 @@ const AboutComp4 = () => {
       <div className={styles["broucher-container"]}>
         <div className={styles.bruchers}>
         <button onClick={() => handleDownload("Broucher1")}>
-            <FaCloudDownloadAlt /> Broucher1
+            <FaCloudDownloadAlt /> Brochure1
           </button>
           <button onClick={() => handleDownload("Broucher2")}>
-            <FaCloudDownloadAlt /> Broucher2
+            <FaCloudDownloadAlt /> Brochure2
           </button>
           <button onClick={() => handleDownload("Broucher3")}>
-            <FaCloudDownloadAlt /> Broucher3
+            <FaCloudDownloadAlt /> Brochure3
           </button>
         </div>
       </div>
