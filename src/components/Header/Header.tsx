@@ -1,11 +1,15 @@
-import { Link, NavLink } from "react-router-dom";
-import {FaEnvelope, FaAngleDown } from "react-icons/fa";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { FaEnvelope, FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
 import styles from "components/Header/Header.module.css";
 import logo from "components/Header/assets/golden-royce-design-logo-1@2x.png";
 
 const Header = () => {
   const [isVerticalsOpen, setIsVerticalsOpen] = useState(false);
+
+  const location = useLocation();
+
+  const isVerticalsPage = location.pathname.includes("/verticals");
 
   const handleMouseEnter = () => {
     setIsVerticalsOpen(true);
@@ -22,27 +26,28 @@ const Header = () => {
       className={styles.subNav}
     >
       <div className={styles.colnav}>
-      <Link to="/verticals/buzzebee"><h3>BUZZ-BEE</h3></Link>
+        <Link to="/verticals/buzzebee">
+          <h3>BUZZ-BEE</h3>
+        </Link>
         <ul>
-          <li className={styles.colnav111}>
-            From Idea To Icon
-          </li>
+          <li className={styles.colnav111}>From Idea To Icon</li>
         </ul>
       </div>
       <div className={styles.colnav}>
-      <Link to="/verticals/itservice"><h3>IT SERVICES & SOLUTIONS</h3></Link>
+        <Link to="/verticals/itservice">
+          <h3>IT SERVICES & SOLUTIONS</h3>
+        </Link>
         <ul>
-          <li className={styles.colnav111}>
-            Your Vision Our Technology
-          </li>
+          <li className={styles.colnav111}>Your Vision Our Technology</li>
         </ul>
       </div>
       <div className={styles.colnav}>
-      <Link to="/verticals/cyber"> <h3>CYBER SECURITY</h3></Link>
+        <Link to="/verticals/cyber">
+          {" "}
+          <h3>CYBER SECURITY</h3>
+        </Link>
         <ul>
-          <li className={styles.colnav111}>
-            Secure Today
-          </li>
+          <li className={styles.colnav111}>Secure Today</li>
         </ul>
       </div>
     </div>
@@ -91,7 +96,7 @@ const Header = () => {
                 className={styles.dropNav}
               >
                 <NavLink
-                  to="/verticals"
+                  to={isVerticalsPage ? location.pathname : "/verticals"}
                   style={({ isActive }) => {
                     return { color: isActive ? "#F0C545" : "#AD000E" };
                   }}
