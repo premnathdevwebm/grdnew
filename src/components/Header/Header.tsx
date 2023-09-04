@@ -96,7 +96,7 @@ const Header = () => {
                 className={styles.dropNav}
               >
                 <NavLink
-                  to={isVerticalsPage ? location.pathname : "/verticals"}
+                  to={isVerticalsPage ? location.pathname : "/verticals/buzzebee"}
                   style={({ isActive }) => {
                     return { color: isActive ? "#F0C545" : "#AD000E" };
                   }}
