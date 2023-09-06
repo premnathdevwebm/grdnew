@@ -3,48 +3,42 @@ import { useState, useEffect } from "react";
 import styles from "pages/Comming/Comming.module.css";
 
 function ComingSoon1() {
+  const targetDate = new Date("2023-09-12T00:00:00");
+  const now = new Date();
 
-  const [secValue, setSecValue] = useState(11);
-  const [minValue, setMinValue] = useState(2);
-  const [hourValue, setHourValue] = useState(2);
-  const [dayValue, setDayValue] = useState(4);
+  // Check if the target date is in the future
+  const countdown =
+    targetDate.getTime() > now.getTime()
+      ? targetDate.getTime() - now.getTime()
+      : 0;
+
+  const [countdownValue, setCountdownValue] = useState(countdown);
 
   useEffect(() => {
-    const timeFunction = setInterval(() => {
-      setSecValue((prevSecValue) => {
-        if (prevSecValue === 0) {
-          setMinValue((prevMinValue) => {
-            if (prevMinValue === 0) {
-              setHourValue((prevHourValue) => {
-                if (prevHourValue === 0) {
-                  setDayValue((prevDayValue) => {
-                    if (prevDayValue === 0) {
-                      clearInterval(timeFunction);
-                      return 0;
-                    }
-                    return prevDayValue - 1;
-                  });
-                  return 24;
-                }
-                return prevHourValue - 1;
-              });
-              return 60;
-            }
-            return prevMinValue - 1;
-          });
-          return 60;
+    const interval = setInterval(() => {
+      setCountdownValue((prevCountdown) => {
+        if (prevCountdown <= 0) {
+          clearInterval(interval);
+          return 0;
         }
-        return prevSecValue - 1;
+        return prevCountdown - 1000;
       });
     }, 1000);
 
-    return () => clearInterval(timeFunction);
+    return () => clearInterval(interval);
   }, []);
+
+  const days = Math.floor(countdownValue / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (countdownValue % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((countdownValue % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((countdownValue % (1000 * 60)) / 1000);
 
   return (
     <section className={styles["container"]}>
       <img
-        src="https://goldenroycedesign.com/static/media/firstimage.4c15eb589e522965764b.png"
+        src="https://img.freepik.com/free-vector/realistic-galaxy-background_52683-63534.jpg"
         alt=""
         className={styles["image"]}
       />
@@ -54,20 +48,28 @@ function ComingSoon1() {
         to share our new platform with you.
       </p>
       <div className={styles["time-content"]}>
-      <div className={styles["time days"]}>
-          <span className={styles["number"]}>{dayValue < 10 ? `0${dayValue}` : dayValue}</span>
+        <div className={styles["time days"]}>
+          <span className={styles["number"]}>
+            {days < 10 ? `0${days}` : days}
+          </span>
           <span className={styles["text"]}>days</span>
         </div>
         <div className={styles["time hours"]}>
-          <span className={styles["number"]}>{hourValue < 10 ? `0${hourValue}` : hourValue}</span>
+          <span className={styles["number"]}>
+            {hours < 10 ? `0${hours}` : hours}
+          </span>
           <span className={styles["text"]}>hours</span>
         </div>
         <div className={styles["time minutes"]}>
-          <span className={styles["number"]}>{minValue < 10 ? `0${minValue}` : minValue}</span>
+          <span className={styles["number"]}>
+            {minutes < 10 ? `0${minutes}` : minutes}
+          </span>
           <span className={styles["text"]}>minutes</span>
         </div>
         <div className={styles["time seconds"]}>
-          <span className={styles["number"]}>{secValue < 10 ? `0${secValue}` : secValue}</span>
+          <span className={styles["number"]}>
+            {seconds < 10 ? `0${seconds}` : seconds}
+          </span>
           <span className={styles["text"]}>seconds</span>
         </div>
       </div>
