@@ -150,3 +150,15 @@ textarea:focus {
     --up: 1;
   }
 }
+
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.coming-soon-content {
+  text-align: center;
+}
