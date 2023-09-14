@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "pages/Comming/Comming.module.css";
 
 function ComingSoon1() {
-  const targetDate = new Date("2023-09-12T00:00:00");
+  const targetDate = new Date("2023-09-18T00:00:00");
   const now = new Date();
 
   // Check if the target date is in the future
