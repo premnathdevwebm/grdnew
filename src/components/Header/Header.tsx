@@ -1,11 +1,12 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { FaEnvelope, FaAngleDown } from "react-icons/fa";
+import { FaEnvelope, FaAngleDown, FaBars } from "react-icons/fa";
 import { useState } from "react";
 import styles from "components/Header/Header.module.css";
 import logo from "components/Header/assets/golden-royce-design-logo-1@2x.png";
 
 const Header = () => {
   const [isVerticalsOpen, setIsVerticalsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const location = useLocation();
 
@@ -18,6 +19,44 @@ const Header = () => {
   const handleMouseLeave = () => {
     setIsVerticalsOpen(false);
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const mobileMenu = isMobileMenuOpen && (
+    <div className={styles.mobileMenu}>
+      <ul>
+        <li>
+          <NavLink to="/" onClick={closeMobileMenu}>
+            HOME
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" onClick={closeMobileMenu}>
+            ABOUT US
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={isVerticalsPage ? location.pathname : "/verticals/buzzebee"}
+            onClick={closeMobileMenu}
+          >
+            VERTICALS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" onClick={closeMobileMenu}>
+            CONTACT US
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  );
 
   const verticalsSubNav = isVerticalsOpen && (
     <div
@@ -43,7 +82,6 @@ const Header = () => {
       </div>
       <div className={styles.colnav}>
         <Link to="/verticals/cyber">
-          {" "}
           <h3>CYBER SECURITY</h3>
         </Link>
         <ul>
@@ -62,7 +100,7 @@ const Header = () => {
           </Link>
           <div className={styles.gold}>
             <p className={styles.goldenRoyceDesign}>GOLDEN ROYCE DESIGN</p>
-            <p className={styles.buisnessMadeSmart}>BUISNESS MADE SMART</p>
+            <p className={styles.buisnessMadeSmart}>BUSINESS MADE SMART</p>
           </div>
         </div>
       </div>
@@ -96,7 +134,9 @@ const Header = () => {
                 className={styles.dropNav}
               >
                 <NavLink
-                  to={isVerticalsPage ? location.pathname : "/verticals/buzzebee"}
+                  to={
+                    isVerticalsPage ? location.pathname : "/verticals/buzzebee"
+                  }
                   style={({ isActive }) => {
                     return { color: isActive ? "#F0C545" : "#AD000E" };
                   }}
@@ -124,6 +164,12 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      <div className={styles.mobileMenuIcon}>
+        <button onClick={toggleMobileMenu}>
+          <FaBars />
+        </button>
+      </div>
+      {mobileMenu}
     </div>
   );
 };
