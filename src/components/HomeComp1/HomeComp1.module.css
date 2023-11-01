@@ -56,10 +56,11 @@
   color: #fff;
   text-align: center;
   font-family: Century Gothic;
-  font-size: 56px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  height: 120px;
 }
 
 .contentsuper .content3 {
