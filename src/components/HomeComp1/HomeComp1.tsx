@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import styles from "components/HomeComp1/HomeComp1.module.css";
-import InfiniteScrollList from "components/HomeComp1/InfinteScroll";
-
 
 const HomeComp1 = () => {
   const [isInView, setIsInView] = useState(false);
@@ -53,9 +51,6 @@ const HomeComp1 = () => {
         <div className={styles.content2}>
           <p className={styles.para3}>Powerhouse of</p>
           <p className={styles.para3}>{typewriterText}</p>
-        </div>
-        <div className={styles.content3}>
-          <InfiniteScrollList />
         </div>
       </div>
     </div>
