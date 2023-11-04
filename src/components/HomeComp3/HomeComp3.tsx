@@ -36,8 +36,7 @@ const HomeComp3 = () => {
         <div className={styles.vertical}>VERTICALS</div>
         <div className={styles.vertContent}>
           <div className={styles.vertContent1} ref={ref1}>
-            <motion.div
-            
+            <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={animate1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.9 }}

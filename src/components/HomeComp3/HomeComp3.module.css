@@ -33,10 +33,11 @@
 }
 .vertContent {
   position: relative;
-  top: -50px;
+  top: -170px;
   left: 200px;
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 .vertContent1,
 .vertContent2,
@@ -54,7 +55,7 @@
 }
 
 .contimage:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .capcontent {
@@ -66,24 +67,31 @@
   line-height: normal;
 }
 
-.knowcontainer{
+.knowcontainer {
   display: flex;
   justify-content: flex-end;
 }
 
-.know{
+.know {
   display: flex;
   justify-content: center;
   width: 120px;
   padding: 2px;
-  border: 1px solid #FFF8E7;
-  color: #FFF8E7;
+  border: 1px solid #fff8e7;
+  color: #fff8e7;
   font-family: Century Gothic;
   font-size: 14px;
   margin-top: 5px;
 }
 
-.know:hover{
+.know:hover {
   color: rgba(173, 0, 14, 0.8);
-  background-color: #FFF8E7;
+  background-color: #fff8e7;
+}
+@media (min-width: 768px) {
+  .vertContent {
+    top: -50px;
+    left: 200px;
+    flex-direction: row;
+  }
 }
