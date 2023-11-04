@@ -17,19 +17,19 @@
 .testimonialContain {
   height: 70%;
   width: 100vw;
-  margin-left: 20%;
+  margin-left: 5%;
   background: rgba(255, 248, 231, 0.39);
   overflow: hidden;
 }
 
 .symbolTest {
   position: absolute;
-  top: 80px;
-  left: 240px;
+  top: 20px;
+  left: 40px;
 }
 .doublquoteMain {
   position: absolute;
-  top: 90px;
+  top: 70px;
   z-index: 10;
   color: #fff;
   text-align: center;
@@ -39,12 +39,12 @@
   font-weight: 700;
   line-height: 200px;
 }
-.title{
+.title {
   position: absolute;
-  top: 380px;
-  left: 160px;
+  top: 280px;
+  left: -60px;
   transform: rotate(-90deg);
-  color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
   font-family: Bungee;
   font-size: 35px;
@@ -54,10 +54,31 @@
   letter-spacing: 6px;
 }
 
-.carcarousel{
+.carcarousel {
   position: absolute;
   overflow: hidden;
-  left: 450px;
+  left: 150px;
   height: 495px;
   top: 120px;
+}
+@media (min-width: 768px) {
+  .testimonialContain {
+    margin-left: 20%;
+  }
+  .symbolTest {
+    top: 80px;
+    left: 240px;
+  }
+  .doublquoteMain {
+    top: 90px;
+  }
+  .title {
+    top: 380px;
+    left: 160px;
+  }
+  .carcarousel {
+    left: 450px;
+    height: 495px;
+    top: 120px;
+  }
 }
