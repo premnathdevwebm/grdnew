@@ -7,6 +7,7 @@ import styles from "components/HomeComp2/HomeComp2.module.css";
 import imag1 from "components/HomeComp2/assets/comp1.png";
 import imag2 from "components/HomeComp2/assets/comp2.png";
 import logo from "components/HomeComp2/assets/logo.png";
+
 const HomeComp2 = () => {
   const navigate = useNavigate();
   const [column1Visible, setColumn1Visible] = useState(false);
