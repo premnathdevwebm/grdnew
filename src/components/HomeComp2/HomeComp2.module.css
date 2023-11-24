@@ -58,6 +58,7 @@
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    margin-top: -120px;
   }
   .column1,
   .column2,
